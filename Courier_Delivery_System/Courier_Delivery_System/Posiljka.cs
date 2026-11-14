@@ -21,7 +21,28 @@ public abstract class Posiljka
 
     public void PrikaziInformacije()
     {
-        Console.WriteLine($"Broj posiljke: {BrojPosiljke} | Naziv primaoca: {ImePrimaoca} | Tezina posiljke: {Tezina} | Status posiljke: {Status}");
+        Console.WriteLine(ToString());
+    }
+    public override string ToString()
+    {
+        return $"Broj posiljke: {BrojPosiljke} | Naziv primaoca: {ImePrimaoca} | Tezina posiljke: {Tezina} | Status posiljke: {Status} | Cjena: {IzracunajCjenu()}";
+    }
+
+    public void PromjeniStatus(StatusPosiljke noviStatus)
+    {
+        bool dozvoljeniPrelaz = (Status == StatusPosiljke.Kreirana && noviStatus == StatusPosiljke.UTransportu) ||
+            (Status == StatusPosiljke.UTransportu && noviStatus == StatusPosiljke.Dostavljena) ||
+            (Status == StatusPosiljke.Kreirana && noviStatus == StatusPosiljke.Otkazana);
+
+        if(dozvoljeniPrelaz)
+        {
+            Status = noviStatus;
+            Console.WriteLine($"Posiljka broj {BrojPosiljke} promjenila je status u {Status}!");
+        }
+        else
+        {
+            Console.WriteLine("Promjena statusa nije dozvoljena!");
+        }
     }
 
 }

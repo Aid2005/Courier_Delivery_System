@@ -6,5 +6,5 @@ public interface IOsigurljivo
 {
     public void Osiguraj(double vrijednost);
 
-    public double IzracunajOsiguranje() { return 2.1; }
+    public double IzracunajOsiguranje();
 }
