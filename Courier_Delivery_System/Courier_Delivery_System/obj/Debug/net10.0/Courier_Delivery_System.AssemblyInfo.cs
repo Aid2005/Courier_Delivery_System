@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Courier_Delivery_System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b65f8c10f8775ef1f389dbe1e056d1052e07fdfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e180dbad008597dc92421bef57acd3a7a4e1aef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Courier_Delivery_System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Courier_Delivery_System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
